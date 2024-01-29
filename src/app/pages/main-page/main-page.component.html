@@ -1,0 +1,97 @@
+<div class="grid grid-cols-3 grid-rows-3 bg-white dark:bg-slate-900 w-full h-full bg-cover items-center justify-center">
+  <div class="col-start-1 row-start-1 tracking-tight text-gray-900 dark:text-white justify-self-left justify-self-center">
+    <div class="max-w-sm">
+      <h5 class="mb-10 md:text-4xl text-2xl font-bold text-gray-900 dark:text-white tracking-wide">Bonjour, je m'appelle Armand</h5>
+      <p class="mb-10 md:text-xl text-lg font-normal text-gray-700 dark:text-gray-400 tracking-wide">
+        Je suis étudiant en informatique à l'IUT de Montreuil en alternance chez SAP.
+      </p>
+      <div class="w-fit">
+        <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" (click)="scrollToElement(sommaire)">
+          Commencer
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="flex col-start-3 row-start-1 row-span-2 self-start justify-self-start">
+    <div class="border-solid block m-5  max-w-sm p-6 bg-slate-200 border border-gray-200 rounded-3xl shadow dark:bg-slate-800 dark:border-slate-700">
+      <div class="border-solid bg-white border-gray-200 shadow dark:bg-slate-800 dark:border-slate-700 border-4 self-center m-5 min-w-16 min-h-16 md:min-h-64 md:min-w-64 rounded-full p-0.5">
+        <img ngSrc="assets/images/photo_de_profil.jpeg" alt="photo_profil" class="rounded-full w-full h-full"
+             height="168" width="168">
+      </div>
+      <div class="text-center divide-y divide-gray-600">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Armand CHAPLAIN-DURET</h5>
+        <div class="">
+          <p class="font-normal text-gray-700 dark:text-gray-400 mt-3">Étudiant à l'IUT de Montreuil en <b>BUT informatique</b>, je suis actuellement en <b>alternance</b> chez SAP au poste de ...</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mt-5">
+        <div class="justify-self-center">
+          <a href="https://github.com/Armandpro12">
+            <svg viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-7 md:h-7 w-6 h-6">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3789 0C6.88347 0 0 6.88347 0 15.3789C0 22.1723 4.40542 27.9394 10.5179 29.9719C11.2889 30.112 11.5692 29.6415 11.5692 29.2309C11.5692 28.8655 11.5542 27.8993 11.5492 26.6177C7.26894 27.5439 6.36783 24.5552 6.36783 24.5552C5.66697 22.778 4.66073 22.3024 4.66073 22.3024C3.26401 21.3513 4.76586 21.3713 4.76586 21.3713C6.30776 21.4814 7.11876 22.9532 7.11876 22.9532C8.49044 25.3061 10.7182 24.6253 11.5943 24.2348C11.7344 23.2386 12.1349 22.5627 12.5705 22.1773C9.15626 21.7918 5.56685 20.4702 5.56685 14.5779C5.56685 12.8959 6.16759 11.5242 7.14879 10.4478C6.9936 10.0624 6.46295 8.49545 7.29898 6.37785C7.29898 6.37785 8.59057 5.96734 11.5292 7.95478C12.7557 7.61436 14.0723 7.44416 15.3789 7.43915C16.6855 7.44416 18.0021 7.61436 19.2287 7.95478C22.1673 5.96734 23.4538 6.37785 23.4538 6.37785C24.2949 8.49545 23.7692 10.0624 23.609 10.4478C24.5953 11.5242 25.186 12.8959 25.186 14.5779C25.186 20.4852 21.5916 21.7818 18.1673 22.1673C18.718 22.6378 19.2086 23.579 19.2086 25.0108C19.2086 27.0683 19.1936 28.7253 19.1936 29.2309C19.1936 29.6415 19.4689 30.122 20.2499 29.9719C26.3574 27.9344 30.7578 22.1723 30.7578 15.3789C30.7578 6.88347 23.8744 0 15.3789 0Z" fill="#9ca3af"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="justify-self-center">
+          <a href="mailto: chaplainduretarmandpro@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9ca3af" class="md:w-7 md:h-7 w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="justify-self-center">
+          <a href="https://www.linkedin.com/in/armand-chaplain-duret-b32a39233/">
+            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-7 md:h-7 w-6 h-6">
+              <path d="M3.40909 0C1.54474 0 0 1.54474 0 3.40909V26.5909C0 28.4553 1.54474 30 3.40909 30H26.5909C28.4553 30 30 28.4553 30 26.5909V3.40909C30 1.54474 28.4553 0 26.5909 0H3.40909ZM3.40909 2.72727H26.5909C26.9798 2.72727 27.2727 3.02024 27.2727 3.40909V26.5909C27.2727 26.9798 26.9798 27.2727 26.5909 27.2727H3.40909C3.02024 27.2727 2.72727 26.9798 2.72727 26.5909V3.40909C2.72727 3.02024 3.02024 2.72727 3.40909 2.72727ZM7.41477 5.07102C6.12038 5.07102 5.07102 6.12038 5.07102 7.41477C5.07102 8.70916 6.12038 9.75852 7.41477 9.75852C8.70916 9.75852 9.75852 8.70916 9.75852 7.41477C9.75852 6.12038 8.70916 5.07102 7.41477 5.07102ZM19.7301 11.2926C17.7752 11.2926 16.4755 12.3633 15.9375 13.3807H15.8523V11.5909H12.017V24.5455H16.0227V18.1534C16.0227 16.4648 16.3583 14.8295 18.4517 14.8295C20.5131 14.8295 20.5398 16.7365 20.5398 18.2386V24.5455H24.5455V17.429C24.5455 13.9453 23.805 11.2926 19.7301 11.2926ZM5.45455 11.5909V24.5455H9.50284V11.5909H5.45455Z" fill="#9ca3af"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div #sommaire class="row-start-2 col-start-1 justify-self-end w-3/4">
+    <div class="border-solid block m-5 p-6 border border-gray-200 rounded-3xl shadow bg-slate-200 dark:bg-slate-800 dark:border-slate-700 self-end max-h-fit">
+      <h5 class="mb-2 md:text-4xl text-base font-bold tracking-tight text-gray-900 dark:text-white">Sommaire</h5>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Cliquez sur un des liens ci-dessous afin de vous rendre immédiatement à l'élément correspondant sur la page</p>
+      <div class="flex gap-3 items-center justify-start mt-6">
+        <p class="text-xl tracking-tight text-gray-900 dark:text-white">Timeline</p>
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-h-8 align-text-bottom">
+          <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </button>
+      </div>
+      <p class="font-normal text-gray-700 dark:text-gray-400">La timeline de mon parcours académique</p>
+
+      <div class="flex gap-3 items-center justify-start mt-6">
+        <p class="text-xl tracking-tight text-gray-900 dark:text-white">Missions d'entreprise</p>
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-h-8 align-text-bottom" routerLink="/missions">
+          <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </button>
+      </div>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Les missions effectuées dans le cadre de l'entreprise</p>
+
+      <div class="flex gap-3 items-center justify-start mt-6">
+        <p class="text-xl tracking-tight text-gray-900 dark:text-white">Projets académique</p>
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-h-8 align-text-bottom">
+          <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </button>
+      </div>
+      <p class="font-normal text-gray-700 dark:text-gray-400 mt-1">Les projets (SAÉ) effectués à l'IUT de Montreuil</p>
+
+    </div>
+  </div>
+
+
+
+</div>
+
