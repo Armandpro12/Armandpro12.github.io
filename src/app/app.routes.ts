@@ -3,11 +3,15 @@ import {MainPageComponent} from "./pages/main-page/main-page.component";
 import {MissionsPageComponent} from "./pages/missions-page/missions-page.component";
 import {NavbarComponent} from "./header/navbar/navbar.component";
 import {ProjetsPageComponent} from "./pages/projets-page/projets-page.component";
+import {
+  ScrollTopButtonFeatureComponent
+} from "./features/scroll-top-button-feature/scroll-top-button-feature.component";
 
 export const routes: Routes = [
   { path: 'home', component: MainPageComponent},
   { path: '', component: MainPageComponent},
   {path: 'missions', component: MissionsPageComponent},
   { path: 'navbar', component: NavbarComponent},
-  { path: 'projets', component: ProjetsPageComponent}
+  { path: 'projets', component: ProjetsPageComponent},
+  { path: 'scroll-top-button', component: ScrollTopButtonFeatureComponent}
 ];

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './missions-page.component.css'
 })
 export class MissionsPageComponent {
-
+  missionsLib: {} = []
 }

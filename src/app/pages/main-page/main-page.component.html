@@ -1,12 +1,12 @@
 <div class="grid grid-cols-3 grid-rows-3 bg-white dark:bg-slate-900 w-full h-full bg-cover items-center justify-center">
   <div class="col-start-1 row-start-1 tracking-tight text-gray-900 dark:text-white justify-self-left justify-self-center">
     <div class="max-w-sm">
-      <h5 class="mb-10 md:text-4xl text-2xl font-bold text-gray-900 dark:text-white tracking-wide">Bonjour, je m'appelle Armand</h5>
+      <h5 class="mb-10 md:text-4xl text-2xl font-bold text-gray-900 dark:text-white tracking-wide" #top>Bonjour, je m'appelle Armand</h5>
       <p class="mb-10 md:text-xl text-lg font-normal text-gray-700 dark:text-gray-400 tracking-wide">
-        Je suis étudiant en informatique à l'IUT de Montreuil en alternance chez SAP.
+        Je suis étudiant en BUT informatique à l'IUT de Montreuil en alternance chez SAP.
       </p>
       <div class="w-fit">
-        <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" (click)="scrollToElement(sommaire)">
+        <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800" (click)="scrollToElement(sommaire)">
           Commencer
           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -18,16 +18,17 @@
   <div class="flex col-start-3 row-start-1 row-span-2 self-start justify-self-start">
     <div class="border-solid block m-5  max-w-sm p-6 bg-slate-200 border border-gray-200 rounded-3xl shadow dark:bg-slate-800 dark:border-slate-700">
       <div class="border-solid bg-white border-gray-200 shadow dark:bg-slate-800 dark:border-slate-700 border-4 self-center m-5 min-w-16 min-h-16 md:min-h-64 md:min-w-64 rounded-full p-0.5">
-        <img ngSrc="assets/images/photo_de_profil.jpeg" alt="photo_profil" class="rounded-full w-full h-full"
+        <img src="assets/images/photo_de_profil.jpeg" alt="photo_profil" class="rounded-full w-full h-full"
              height="168" width="168">
       </div>
       <div class="text-center divide-y divide-gray-600">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Armand CHAPLAIN-DURET</h5>
-        <div class="">
+        <div class="justify-center item">
           <p class="font-normal text-gray-700 dark:text-gray-400 mt-3">Étudiant à l'IUT de Montreuil en <b>BUT informatique</b>, je suis actuellement en <b>alternance</b> chez SAP au poste de ...</p>
         </div>
       </div>
       <div class="grid grid-cols-3 mt-5">
+
         <div class="justify-self-center">
           <a href="https://github.com/Armandpro12">
             <svg viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-7 md:h-7 w-6 h-6">
@@ -57,20 +58,20 @@
   <div #sommaire class="row-start-2 col-start-1 justify-self-end w-3/4">
     <div class="border-solid block m-5 p-6 border border-gray-200 rounded-3xl shadow bg-slate-200 dark:bg-slate-800 dark:border-slate-700 self-end max-h-fit">
       <h5 class="mb-2 md:text-4xl text-base font-bold tracking-tight text-gray-900 dark:text-white">Sommaire</h5>
-      <p class="font-normal text-gray-700 dark:text-gray-400">Cliquez sur un des liens ci-dessous afin de vous rendre immédiatement à l'élément correspondant sur la page</p>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Cliquez sur un des liens ci-dessous afin de vous rendre immédiatement à la page correspondante</p>
       <div class="flex gap-3 items-center justify-start mt-6">
-        <p class="text-xl tracking-tight text-gray-900 dark:text-white">Timeline</p>
-        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-h-8 align-text-bottom">
+        <p class="text-xl tracking-tight text-gray-900 dark:text-white">Parcours</p>
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800">
           <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
           </svg>
         </button>
       </div>
-      <p class="font-normal text-gray-700 dark:text-gray-400">La timeline de mon parcours académique</p>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Mon parcours académique</p>
 
       <div class="flex gap-3 items-center justify-start mt-6">
         <p class="text-xl tracking-tight text-gray-900 dark:text-white">Missions d'entreprise</p>
-        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-h-8 align-text-bottom" routerLink="/missions">
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800" (click)="scrollToElement(missions)">
           <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
           </svg>
@@ -80,18 +81,19 @@
 
       <div class="flex gap-3 items-center justify-start mt-6">
         <p class="text-xl tracking-tight text-gray-900 dark:text-white">Projets académique</p>
-        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 max-h-8 align-text-bottom">
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800" routerLink="/projets">
           <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
           </svg>
         </button>
       </div>
-      <p class="font-normal text-gray-700 dark:text-gray-400 mt-1">Les projets (SAÉ) effectués à l'IUT de Montreuil</p>
-
+      <p class="font-normal text-gray-700 dark:text-gray-400 mt-1">Les projets/SAÉ effectués dans le cadre de l'école/université</p>
     </div>
   </div>
 
-
+  <div #missions class="row-start-3 col-span-full">
+    <app-missions-page></app-missions-page>
+  </div>
 
 </div>
 
