@@ -12,6 +12,7 @@ export class ScrollTopButtonFeatureComponent {
   }
   scrollToTop() {
     window.scroll(0,0)
+    console.log()
   }
 
 }
