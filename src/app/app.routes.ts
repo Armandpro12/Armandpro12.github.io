@@ -6,6 +6,8 @@ import {ProjetsPageComponent} from "./pages/projets-page/projets-page.component"
 import {
   ScrollTopButtonFeatureComponent
 } from "./features/scroll-top-button-feature/scroll-top-button-feature.component";
+import {ParcoursPageComponent} from "./pages/parcours-page/parcours-page.component";
+import {CvPageComponent} from "./pages/cv-page/cv-page.component";
 
 export const routes: Routes = [
   { path: 'home', component: MainPageComponent},
@@ -13,5 +15,7 @@ export const routes: Routes = [
   {path: 'missions', component: MissionsPageComponent},
   { path: 'navbar', component: NavbarComponent},
   { path: 'projets', component: ProjetsPageComponent},
-  { path: 'scroll-top-button', component: ScrollTopButtonFeatureComponent}
+  { path: 'scroll-top-button', component: ScrollTopButtonFeatureComponent},
+  { path: 'parcours', component: ParcoursPageComponent},
+  { path: 'cv', component: CvPageComponent}
 ];

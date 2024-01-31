@@ -9,6 +9,10 @@
 }
 
 @media (prefers-color-scheme: dark){
+  #arrowEndTimeline {
+    stroke-width: 5;
+    stroke: #1e293b;
+  }
   /* Track */
   ::-webkit-scrollbar-track {
     background: rgb(30, 41, 59);
@@ -28,6 +32,12 @@
 }
 
 @media (prefers-color-scheme: light){
+
+  #arrowEndTimeline {
+    stroke-width: 5;
+    stroke: #e2e8f0;
+  }
+
   /* Track */
   ::-webkit-scrollbar-track {
     background: rgb(226, 232, 240);
