@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {KeyValuePipe, NgForOf, NgOptimizedImage} from "@angular/common";
 import {MissionsPageComponent} from "../missions-page/missions-page.component";
@@ -6,7 +6,8 @@ import {
   ScrollTopButtonFeatureComponent
 } from "../../features/scroll-top-button-feature/scroll-top-button-feature.component";
 import {ExperiencesPageComponent} from "../experiences-page/experiences-page.component";
-
+import {CvPageComponent} from "../cv-page/cv-page.component";
+import {ParcoursPageComponent} from "../parcours-page/parcours-page.component";
 @Component({
   selector: 'app-main-page',
   standalone: true,
@@ -18,31 +19,19 @@ import {ExperiencesPageComponent} from "../experiences-page/experiences-page.com
     ScrollTopButtonFeatureComponent,
     KeyValuePipe,
     NgForOf,
-    ExperiencesPageComponent
+    ExperiencesPageComponent,
+    CvPageComponent,
+    ParcoursPageComponent
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.css'
 })
 export class MainPageComponent {
-  summaryElements = {
-    "parcours": {
-      "titre": "Parcours",
-      "description": "Mon parcours académique",
-      "url": "/parcours"
-    },
-    "experiences": {
-      "titre": "Expériences",
-      "description": "Mes expériences professionnelles et académiques",
-      "url": "/experiences"
-    },
-    "CV": {
-      "titre": "CV",
-      "description": "Mon CV en format PDF que vous pouvez télécharger",
-      "url": "/cv"
-    },
-  }
+  @ViewChild("CV") cv: any;
+  @ViewChild("parcours") parcours: any;
+  @ViewChild("experiences") experiences: any;
   scrollToElement(target: HTMLDivElement) {
-    target.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    target.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 }
 

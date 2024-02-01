@@ -1,4 +1,4 @@
-<div class="grid grid-cols-3 grid-rows-3 bg-white dark:bg-slate-900 w-full h-full bg-cover items-center justify-center">
+<div class="md:grid md:grid-cols-3 md:grid-rows-3 flex flex-col bg-white dark:bg-slate-900 w-full h-full bg-cover items-center justify-center">
   <div class="col-start-1 row-start-1 tracking-tight text-gray-900 dark:text-white justify-self-left justify-self-center">
     <div class="max-w-sm">
       <h5 class="mb-10 md:text-4xl text-2xl font-bold text-gray-900 dark:text-white tracking-wide" #top>Bonjour, je m'appelle Armand</h5>
@@ -60,25 +60,46 @@
   <div #sommaire class="row-start-2 col-start-1 justify-self-end w-3/4">
     <div class="border-solid block m-5 p-6 border border-gray-200 rounded-3xl shadow bg-slate-200 dark:bg-slate-800 dark:border-slate-700 self-end max-h-fit">
       <h5 class="mb-2 md:text-4xl text-base font-bold tracking-tight text-gray-900 dark:text-white">Sommaire</h5>
-      <p class="font-normal text-gray-700 dark:text-gray-400">Cliquez sur un des liens ci-dessous afin de vous rendre immédiatement à la page correspondante</p>
-
-      <div *ngFor="let element of summaryElements | keyvalue">
+      <p class="font-normal text-gray-700 dark:text-gray-400">Cliquez sur un des boutons ci-dessous afin de vous rendre immédiatement à la section correspondante</p>
+      <div class="flex gap-3 items-center justify-start mt-6">
+        <p class="text-xl tracking-tight text-gray-900 dark:text-white">CV</p>
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800" (click)="scrollToElement(CV)">
+          <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </button>
+      </div>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Mon CV en format PDF que vous pouvez télécharger</p>
+      <div class="flex gap-3 items-center justify-start mt-6">
+        <p class="text-xl tracking-tight text-gray-900 dark:text-white">Expériences</p>
+        <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800" (click)="scrollToElement(experiences)">
+          <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </button>
+      </div>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Mes expériences professionnelles et académiques</p>
         <div class="flex gap-3 items-center justify-start mt-6">
-          <p class="text-xl tracking-tight text-gray-900 dark:text-white">{{ element.value.titre }}</p>
-          <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800" routerLink="{{element.value.url}}">
+          <p class="text-xl tracking-tight text-gray-900 dark:text-white">Parcours</p>
+          <button class="inline-flex items-center px-1.5 py-1.5 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-800" (click)="scrollToElement(parcours)">
             <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
           </button>
         </div>
-        <p class="font-normal text-gray-700 dark:text-gray-400">{{ element.value.description }}</p>
-      </div>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Mon parcours académique</p>
     </div>
   </div>
 
-  <div #missions class="row-start-3 col-span-full">
-    <app-experiences-page></app-experiences-page>
+  <div #CV class="row-start-3 col-span-full">
+    <app-cv-page></app-cv-page>
   </div>
 
+</div>
+<div #experiences class="col-span-full">
+  <app-experiences-page></app-experiences-page>
+</div>
+<div #parcours class="col-span-full">
+  <app-parcours-page></app-parcours-page>
 </div>
 
