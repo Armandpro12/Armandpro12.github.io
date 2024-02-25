@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-scroll-top-button-feature',
@@ -8,6 +8,16 @@ import { Component } from '@angular/core';
   styleUrl: './scroll-top-button-feature.component.css'
 })
 export class ScrollTopButtonFeatureComponent {
+  isHidden = true;
+  @HostListener('window:scroll', ['$event'])
+  detectScroll(event: any) {
+    console.log(window.scrollY)
+    if (window.scrollY > 300) {
+      this.isHidden = false;
+    } else {
+      this.isHidden = true;
+    }
+  }
   constructor() {
   }
   scrollToTop() {
