@@ -31,8 +31,14 @@ export class MainPageComponent {
   @ViewChild("parcours") parcours: any;
   @ViewChild("experiences") experiences: any;
   scrollToElement(target: HTMLDivElement) {
-    target.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
+      window.scrollTo({
+        behavior: 'smooth',
+        top:
+          target.getBoundingClientRect().top -
+          document.body.getBoundingClientRect().top -
+          100,
+      })
+    }
 }
 
 // "missions": {
